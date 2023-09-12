@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintWidth_percent="0.625"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tableLayout2"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/division"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="/" />
+
+            <ImageView
+                android:id="@+id/backSpace"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/backspace" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="X" />
+
+            <TextView
+                android:id="@+id/clearAll"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="C" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/substract"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/changeSign"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="+/-" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="." />
+
+            <TextView
+                style="@style/landscape"
+                android:gravity="center"
+                android:text="" />
+            <TextView
+                android:id="@+id/add"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="+" />
+            <TextView
+                android:id="@+id/equalTo"
+                style="@style/operator"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="="
+                android:textSize="24sp" />
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.375"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tableLayout">
+        <TableRow>
+            <TextView
+                android:id="@+id/INV"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="INV"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/DEG"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="DEG"
+                android:padding="10dp"
+                android:freezesText="true"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/modulo"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="%"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/sin"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="sin"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/cos"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="cos"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tan"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="tan"
+                android:padding="10dp"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/ln"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="ln"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/log"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="log"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/squareRoot"
+                style="@style/landscapeOfSpecialSymbols"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/square_root_symbol"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/raisedToX"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="^"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/pie"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="@string/pie_symbol"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/e"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="e"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/openingParanthesis"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="("
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/closingParantehsis"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text=")"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/factorial"
+                style="@style/landscapeOfSpecialSymbols"
+                android:text="!"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="40sp"
+        android:freezesText="true"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:textSize="20sp"
+        android:freezesText="true"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:freezesText="true"
+        android:text="RAD"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

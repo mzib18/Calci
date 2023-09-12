@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calci</string>
+    <string name="square_root_symbol">\u221a</string>
+    <string name="pie_symbol">\u03C0</string>
+</resources>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/INV"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/specialSymbols"
+            android:text="INV"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/DEG"
+            android:layout_height="50dp"
+            android:freezesText="true"
+            android:layout_width="match_parent"
+            style="@style/specialSymbols"
+            android:text="DEG"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/sin"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/specialSymbols"
+            android:text="sin"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/cos"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/specialSymbols"
+            android:text="cos"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tan"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            style="@style/specialSymbols"
+            android:text="tan"
+            android:gravity="center"/>
+
+    </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/modulo"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="%"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/ln"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="ln"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="log"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/squareRoot"
+                android:layout_height="50dp"
+                android:text="@string/square_root_symbol"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/raisedToX"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="^"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/pie"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="@string/pie_symbol"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="e"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/openingParanthesis"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="("
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/closingParantehsis"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text=")"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/factorial"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/specialSymbols"
+                android:text="!"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/seven"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="7"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="8"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/nine"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="9"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/division"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/operator"
+                android:text="/"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/backSpace"
+                style="@style/operator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/backspace" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/four"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="4"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="5"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="6"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/multiply"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/operator"
+                android:text="X"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/clearAll"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/operator"
+                android:text="C"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/one"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="2"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="3"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/substract"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/operator"
+                android:text="-"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/changeSign"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/operator"
+                android:text="+/-"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/zero"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="0"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/decimal"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text="."
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                style="@style/number"
+                android:text=""
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                style="@style/operator"
+                android:text="+"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/equalTo"
+                android:layout_height="60dp"
+                android:layout_width="wrap_content"
+                style="@style/operator"
+                android:textSize="25sp"
+                android:text="="
+                android:background="@color/cardview_dark_background"
+                android:gravity="center"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:freezesText="true"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="24dp"
+        android:freezesText="true"
+        android:text="RAD"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
